@@ -109,7 +109,7 @@ document.getElementById('uploadButton').addEventListener('click', async () => {
     colorResultDiv.innerHTML = '<div class="processing-message">Analyzing image colors...</div>';
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/process-image/", {
+        const response = await fetch("http://ec2-51-112-97-140.me-central-1.compute.amazonaws.com:8001/process-image/", {
             method: "POST",
             body: formData
         });

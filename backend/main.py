@@ -1,21 +1,21 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
-from fastapi.middleware.cors import CORSMiddleware
+
+# from fastapi.middleware.cors import CORSMiddleware
 import openai
-import base64
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
 app = FastAPI()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Adjust to specific origins, e.g., ["http://127.0.0.1:1234"]
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["https://sorapalette.haithamamireh.com"],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 # OpenAI API client
 openai.api_key = os.getenv("OPENAI_API_KEY")

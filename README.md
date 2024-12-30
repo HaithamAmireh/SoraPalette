@@ -10,7 +10,7 @@
 ## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (FastAPI)
+- **Backend**: Python (FastAPI), Openai API
 - **Build Tools**: Docker for backend, GitHub Actions for frontend deployments
 - **Hosting**:
   - **Frontend**: Amazon S3 and CloudFront
@@ -24,3 +24,4 @@
 - GitHub Actions
 - Nginx
 - AWS (S3, EC2, Route53)
+- Openai API

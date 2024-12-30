@@ -194,7 +194,7 @@ document.getElementById('imageInput').addEventListener('change', function () {
     }
 
     // Size validation (optional, adjust max size as needed)
-    const maxSize = 5 * 1024 * 1024; // 5MB
+    const maxSize = 100 * 1024 * 1024; // 5MB
     if (file.size > maxSize) {
         alert('Please select an image smaller than 5MB');
         input.value = '';
